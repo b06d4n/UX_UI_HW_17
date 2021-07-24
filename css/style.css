@@ -55,6 +55,14 @@
     margin-top: 50px;
     background-image: url(../images/Project\ 1\ Picture.png);
 }
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+h1 {
+    font-family: 'Antic Didone', serif;
+}
 /* Footer Styles */
 .footer {
     display: flex;
