@@ -1,79 +1,54 @@
-/* Nav Styles */
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "logo name nav"
+    "intro intro intro"
+    "project1 project1 project1intro"
+    "project2intro project2 project2"
+    "project3 project3 project3intro"
+    "footer footer footer";
+}
+.logo {
+    grid-area: logo;
+    margin: 16px;
+}
+.name {
+    grid-area: name;
+    margin: 16px;
+}
 .nav {
-    width: 100%;
-    height:min-content;
-    display: flex;
-    align-items: center;
-    font-size: larger;
-}
-.icon {
-    display: flex;
-    width: 85%;
-    margin-left: 3%;
-}
-.navigation {
-    display: flex;
-    justify-content: space-around;
-    width: 15%;
-    margin-right: 3%;
-}
-.navigation ul {
-    font-size: larger;
-    font-family: 'Antic Didone', serif;
-    padding: 16px;
-}
-/* Column Styles */
-.column {
-    display: flex;
-    flex-direction: column;
-    height: 1200px;
-    width: 800px;
-    margin-top: 100px;
-    margin-left: 3%;
+    grid-area: nav;
+    margin: 16px;
 }
 .intro {
-    height: 75%;
-    width: 100%;
-    display: flex;
-    align-items:flex-start;
-}
-.project1, .project2, .project3 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
+    grid-area: intro;
+    margin: 16px;
 }
 .project1 {
-    margin-top: 50px;
-    background-image: url(../images/Project\ 1\ Picture.png);
+    grid-area: project1;
+    margin-left: 16px;
+}
+.project1intro {
+    grid-area: project1intro;
 }
 .project2 {
-    margin-left: 150px;
-    background-image: url(../images/Project\ 1\ Picture.png);
-    margin-top: 50px;
+    grid-area: project2;
+    margin-right: 16px;
 }
-.project3 {
-    margin-top: 50px;
-    background-image: url(../images/Project\ 1\ Picture.png);
+.project2intro {
+    grid-area: project2intro;
 }
-.text {
-    margin-left: 10px;
+.project3 { 
+    grid-area: project3;
 }
-h1 {
-    font-family: 'Antic Didone', serif;
+.project3intro {
+    grid-area: project3intro;
 }
-h3 {
-    font-family: 'Antic Didone' serif;
-    font-size: small;
-}
-p {
-}
-/* Footer Styles */
 .footer {
-    display: flex;
-    align-items: center;
+    grid-area: footer;
+    margin: 16px;
     justify-content: space-around;
-    text-decoration: none;
-    margin-top: 50px;
+    align-items: center;
 }
